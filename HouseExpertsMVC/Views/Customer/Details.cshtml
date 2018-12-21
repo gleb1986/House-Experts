@@ -1,0 +1,22 @@
+﻿@model HouseExpertsMVC.Models.Customer
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.FirstName @Model.LastName</h2>
+
+<ul>
+    <li>Customer Type: @Model.CustomerType.Name</li>
+    @if (Model.IsAcive)
+    {
+        <li> Is Active</li>
+    }
+    else
+    {
+        <li> Not Active</li>
+    }
+</ul>
+
+@Html.ActionLink("Update", "Update", "Customer", new {id = Model.ID}, new {@class = "btn btn-primary" })
