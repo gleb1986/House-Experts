@@ -7,13 +7,13 @@ namespace HouseExpertsMVC.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class MakingCustomerIsActiveNotNullableToTryToAvoidError : IMigrationMetadata
+    public sealed partial class MakingemployeeIsActiveNotNullableToTryToAvoidError : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(MakingCustomerIsActiveNotNullableToTryToAvoidError));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(MakingemployeeIsActiveNotNullableToTryToAvoidError));
         
         string IMigrationMetadata.Id
         {
-            get { return "201812210102244_MakingCustomerIsActiveNotNullableToTryToAvoidError"; }
+            get { return "201812210102244_MakingemployeeIsActiveNotNullableToTryToAvoidError"; }
         }
         
         string IMigrationMetadata.Source

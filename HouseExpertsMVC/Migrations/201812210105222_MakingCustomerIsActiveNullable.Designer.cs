@@ -7,13 +7,13 @@ namespace HouseExpertsMVC.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class MakingCustomerIsActiveNullable : IMigrationMetadata
+    public sealed partial class MakingemployeeIsActiveNullable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(MakingCustomerIsActiveNullable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(MakingemployeeIsActiveNullable));
         
         string IMigrationMetadata.Id
         {
-            get { return "201812210105222_MakingCustomerIsActiveNullable"; }
+            get { return "201812210105222_MakingemployeeIsActiveNullable"; }
         }
         
         string IMigrationMetadata.Source

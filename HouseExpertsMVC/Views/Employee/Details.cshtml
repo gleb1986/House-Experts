@@ -1,0 +1,23 @@
+﻿@model HouseExpertsMVC.Models.Employee
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.FirstName  @Model.LastName</h2>
+
+<ul>
+    <li>Employee Type: @Model.EmployeeType.Name</li>
+    <li>Date Added: @Model.DateCreated.ToString()</li>
+    @if (Model.IsAcive)
+    {
+        <li>Is Active</li>
+    }
+    else
+    {
+        <li>Not Active</li>
+    }
+</ul>
+
+@Html.ActionLink("Update", "Update", "Employee", new { id = Model.ID }, new { @class = "btn btn-primary" })
+

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<HouseExpertsMVC.Models.Employee>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Employees</h2>
+
+@Html.ActionLink("Add New Employee", "New", "Employee", null, new { @class = "btn btn-primary" })
+
+<table class="table table-bordered table-hover table-condensed">
+    <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(employee.FirstName + " " + employee.LastName, "Details", "Employee", new { id = employee.ID }, null)</td>
+            </tr>
+        }
+    </tbody>
+</table>

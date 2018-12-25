@@ -8,6 +8,7 @@
 <h2>@Model.FirstName @Model.LastName</h2>
 
 <ul>
+    <li>Date Added: @Model.DateCreated.ToString()</li>
     <li>Customer Type: @Model.CustomerType.Name</li>
     @if (Model.IsAcive)
     {

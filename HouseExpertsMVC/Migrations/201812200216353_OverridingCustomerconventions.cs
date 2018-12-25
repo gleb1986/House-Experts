@@ -3,7 +3,7 @@ namespace HouseExpertsMVC.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class OverridingCustomerconventions : DbMigration
+    public partial class OverridingCustomerConventions : DbMigration
     {
         public override void Up()
         {

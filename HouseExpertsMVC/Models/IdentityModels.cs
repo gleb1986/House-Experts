@@ -23,6 +23,8 @@ namespace HouseExpertsMVC.Models
     {
         public DbSet<Customer> Customers { get; set; }
         public DbSet<CustomerType> CustomerTypes { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<EmployeeType> EmployeeTypes { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
@@ -66,6 +68,36 @@ namespace HouseExpertsMVC.Models
 
             modelBuilder.Entity<CustomerType>().
                 ToTable("CustomerType");
+
+            //modelBuilder.Entity<Employee>()
+            //    .Property(e => e.FirstName)
+            //    .HasMaxLength(50)
+            //    .IsRequired();
+
+            //modelBuilder.Entity<Employee>()
+            //    .Property(e => e.LastName)
+            //    .HasMaxLength(50)
+            //    .IsRequired();
+
+            //modelBuilder.Entity<EmployeeType>()
+            //    .Property(ct => ct.Name)
+            //    .HasMaxLength(50);
+
+            modelBuilder.Entity<Customer>()
+                .Property(c => c.DateCreated)
+                .IsOptional();
+
+            modelBuilder.Entity<Customer>()
+                .Property(c => c.DateModified)
+                .IsOptional();
+
+            //modelBuilder.Entity<Employee>()
+            //    .Property(c => c.DateCreated)
+            //    .IsOptional();
+
+            //modelBuilder.Entity<Employee>()
+            //    .Property(c => c.DateModified)
+            //    .IsOptional();
         }
     }
 }

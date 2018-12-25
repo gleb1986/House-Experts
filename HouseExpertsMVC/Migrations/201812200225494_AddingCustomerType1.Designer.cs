@@ -7,13 +7,13 @@ namespace HouseExpertsMVC.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class AddingCustomerType1 : IMigrationMetadata
+    public sealed partial class AddingemployeeType1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddingCustomerType1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddingemployeeType1));
         
         string IMigrationMetadata.Id
         {
-            get { return "201812200225494_AddingCustomerType1"; }
+            get { return "201812200225494_AddingemployeeType1"; }
         }
         
         string IMigrationMetadata.Source

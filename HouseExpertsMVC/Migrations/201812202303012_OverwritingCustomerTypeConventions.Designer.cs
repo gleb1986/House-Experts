@@ -7,13 +7,13 @@ namespace HouseExpertsMVC.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class OverwritingCustomerTypeConventions : IMigrationMetadata
+    public sealed partial class OverwritingemployeeTypeConventions : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(OverwritingCustomerTypeConventions));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(OverwritingemployeeTypeConventions));
         
         string IMigrationMetadata.Id
         {
-            get { return "201812202303012_OverwritingCustomerTypeConventions"; }
+            get { return "201812202303012_OverwritingemployeeTypeConventions"; }
         }
         
         string IMigrationMetadata.Source
